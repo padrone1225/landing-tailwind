@@ -26,6 +26,11 @@ const Home = () => {
 
   const [currentTab, setCurrentTab] = useState("info");
 
+  function alsoPetersTabSelect() {
+    setAlsoPetersTabActive(true);
+    setlinkTabActive(false);
+  }
+
   function linkTabSelect() {
     setAlsoPetersTabActive(false);
     setlinkTabActive(true);
@@ -45,7 +50,10 @@ const Home = () => {
               : "mb-1 border-2 text-white border-gray-500 rounded-md flex-none"
           }
         >
-          <div className="px-1 py-2 ml-6 text-2xl-text-center -translate-y-6 bg-black select-none hover:cursor-pointer max-w-fit">
+          <div
+            onClick={alsoPetersTabSelect}
+            className="px-1 py-2 ml-6 text-2xl-text-center -translate-y-6 bg-black select-none hover:cursor-pointer max-w-fit"
+          >
             List
           </div>
           {alsoPetersTabActive ? (
