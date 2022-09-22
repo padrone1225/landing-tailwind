@@ -152,6 +152,41 @@ const Home = () => {
           </div>
           <div className="px-12">
             {currentTab === "info" && <p>I {"'"}m a Full-Stack developer</p>}
+            {currentTab === "github" && (
+              <p>
+                Visit me on Github{"  "}
+                <a href="#" className="text-blue-500" target="_blank">
+                  Here
+                </a>
+                .
+              </p>
+            )}
+            {currentTab === "resume" && (
+              <p>
+                View my Resume{" "}
+                <a href="" className="text-blue-500">
+                  Here
+                </a>
+                .
+              </p>
+            )}
+            {currentTab === "contact" && (
+              <p>
+                Send me an email{" "}
+                <a href="" className="text-blue-500">
+                  Here
+                </a>
+                .
+              </p>
+            )}
+            {currentTab === "devFinder" && (
+              <div>
+                <p>Search Github for a user and their info.</p>
+                <a className="text-green-600" href="">
+                  {">"} Try it {"<"}
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
